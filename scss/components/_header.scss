@@ -1,0 +1,71 @@
+.header {
+    &__top {
+        padding: vw(12) 0;
+        @include flex-center(space-between)
+    }
+    &__left {
+        span {
+            font-size: vw(12);
+            line-height: vw(18);
+        }
+    }
+    &__right {
+        @include flex-center(space-between)
+    }
+    &__connection {
+        font-size: vw(12);
+        line-height: vw(18);
+        color: $color-white;
+    }
+    &__burger {
+        position: relative;
+        width: vw(18);
+        height: vw(2);
+        background-color: $color-white;
+        &::before {
+            position: absolute;
+            content: '';
+            width: vw(18);
+            height: vw(2);
+            background-color:$color-white;
+            top: vw(5);
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            width: vw(18);
+            height: vw(2);
+            background-color:$color-white;
+            top: vw(-5);
+        }
+    }
+    &__bottom {
+        padding: vw(22) 0;
+    }
+    &__menu {
+        justify-content: space-between;
+    }
+    &__link {
+        position: relative;
+        font-size: vw(16);
+        line-height: vw(9);
+        color: $color-white;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 0;
+            height: 1px;
+            background: $color-yellow;
+        }
+        &:hover::before {
+            width: 100%;
+            transition: 0.3s;
+        }
+        &:hover {
+            color: $color-yellow;
+            transition: 0.3s;
+        }
+    }
+}
