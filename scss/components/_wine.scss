@@ -1,0 +1,58 @@
+.wine {
+    background-color: $color-gray;
+    &__content {
+        padding: 267px 0 226px 0;
+    }
+    &__subtitle {
+        font-family: 'Poppins';
+        font-size: 20px;
+        line-height: 170%;
+        letter-spacing: 0.35em;
+    }
+    &__title {
+        padding: 46px 0 52px 0;
+        line-height: 28px;
+        span {
+            font-family: 'ChocolateBox';
+            font-size: 74px;
+            line-height: 43px;
+            color: $color-yellow;
+        }
+    }
+    &__desc {
+        max-width: 526px;
+        padding-bottom: 64px;
+        font-family: 'Poppins';
+        font-size: 18px;
+        line-height: 100%;
+    }
+    &__btn {
+        width: 232px;
+        height: 68px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        &:nth-child(2) {
+            margin-left: 60px;
+        }
+    }
+    &__item {
+        position: relative;
+        border: 10px solid $color-yellow;
+        height: 478px;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 374px;
+            height: 374px;
+            background-color: $color-yellow;
+            border-radius: 50%;
+            @include form-center;
+        }
+    }
+    &__img {
+        @include form-center;
+    }
+}

@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'ChocolateBox', sans-serif;
   background-color: #000000;
   color: #fff;
 }
@@ -111,6 +111,17 @@ button {
   text-align: center;
 }
 
+.btn {
+  background-color: #E2B024;
+  color: #1f1f1f;
+}
+
+.btn__transparent {
+  border: 1px solid #E2B024;
+  background-color: transparent;
+  color: #fff;
+}
+
 .header__top {
   padding: 0.625vw 0;
   display: -webkit-box;
@@ -213,6 +224,122 @@ button {
   transition: 0.3s;
 }
 
-.hero {
+.hero__content {
+  margin-top: 7.8125vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero__title {
+  padding: 1.66667vw 0 1.25vw 0;
+}
+
+.hero__title span {
+  color: #E2B024;
+}
+
+.hero__desc {
   text-align: center;
+  max-width: 745px;
+}
+
+.hero__button {
+  padding: 1.82292vw 0;
+  color: #E2B024;
+  text-decoration: underline;
+}
+
+.hero__img {
+  width: 24.47917vw;
+  height: 25vw;
+}
+
+.wine {
+  background-color: #18191A;
+}
+
+.wine__content {
+  padding: 267px 0 226px 0;
+}
+
+.wine__subtitle {
+  font-family: 'Poppins';
+  font-size: 20px;
+  line-height: 170%;
+  letter-spacing: 0.35em;
+}
+
+.wine__title {
+  padding: 46px 0 52px 0;
+  line-height: 28px;
+}
+
+.wine__title span {
+  font-family: 'ChocolateBox';
+  font-size: 74px;
+  line-height: 43px;
+  color: #E2B024;
+}
+
+.wine__desc {
+  max-width: 526px;
+  padding-bottom: 64px;
+  font-family: 'Poppins';
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.wine__btn {
+  width: 232px;
+  height: 68px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.wine__btn:nth-child(2) {
+  margin-left: 60px;
+}
+
+.wine__item {
+  position: relative;
+  border: 10px solid #E2B024;
+  height: 478px;
+}
+
+.wine__item::before {
+  position: absolute;
+  content: '';
+  width: 374px;
+  height: 374px;
+  background-color: #E2B024;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.wine__img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }

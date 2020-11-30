@@ -8,4 +8,13 @@
 .text-center {
 	text-align: center;
 }
+.btn {
+	background-color: $color-yellow;
+	color: $color-darkGray;
+}
+.btn__transparent {
+	border: 1px solid $color-yellow;
+	background-color: transparent;
+	color: $color-white;
+}
 
