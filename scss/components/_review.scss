@@ -1,7 +1,6 @@
 .review {
     background: url(../../assets/images/review/review-bg.jpg) no-repeat center;
     background-size: cover;
-    
     &__content {
         padding: 152px 0 162px 0;
         @include flex-center;

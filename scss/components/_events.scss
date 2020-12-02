@@ -1,0 +1,49 @@
+.events {
+    margin-bottom: 150px;
+    &__title {
+        text-align: center;
+        padding-bottom: 60px;
+        font-family: 'ChocolateBox';
+        font-size: 48px;
+        line-height: 28px;
+        color: $color-white;
+        span {
+            color: $color-yellow;
+        }
+    }
+    &__block {
+        background: $color-gray;
+    }
+    &__info {
+        padding-left: 30px;
+    }
+    &__subtitle {
+        padding: 62px 0 8px 0;
+        font-family: 'Poppins';
+        font-size: 24px;
+        line-height: 36px;
+        color: $color-white;
+    }
+    &__date {
+        font-family: 'Poppins';
+        font-size: 18px;
+        line-height: 27px;
+        color: $color-white;
+    }
+    &__desc {
+        max-width: 512px;
+        padding: 45px 0;
+        font-family: 'Poppins';
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 27px;
+        color: $color-white;
+    }
+    &__btn {
+        text-transform: uppercase;
+        font-family: 'ChocolateBox';
+        font-size: 18px;
+        line-height: 10px;
+        color: $color-yellow;
+    }
+}

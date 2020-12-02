@@ -503,3 +503,65 @@ button {
   color: #fff;
   text-align: center;
 }
+
+.offer {
+  margin: 162px 0 224px 0;
+}
+
+.events {
+  margin-bottom: 150px;
+}
+
+.events__title {
+  text-align: center;
+  padding-bottom: 60px;
+  font-family: 'ChocolateBox';
+  font-size: 48px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.events__title span {
+  color: #E2B024;
+}
+
+.events__block {
+  background: #18191A;
+}
+
+.events__info {
+  padding-left: 30px;
+}
+
+.events__subtitle {
+  padding: 62px 0 8px 0;
+  font-family: 'Poppins';
+  font-size: 24px;
+  line-height: 36px;
+  color: #fff;
+}
+
+.events__date {
+  font-family: 'Poppins';
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+}
+
+.events__desc {
+  max-width: 512px;
+  padding: 45px 0;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  color: #fff;
+}
+
+.events__btn {
+  text-transform: uppercase;
+  font-family: 'ChocolateBox';
+  font-size: 18px;
+  line-height: 10px;
+  color: #E2B024;
+}
