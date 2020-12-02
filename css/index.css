@@ -270,61 +270,61 @@ button {
 }
 
 .wine__content {
-  padding: 267px 0 226px 0;
+  padding: 13.90625vw 0 11.77083vw 0;
 }
 
 .wine__subtitle {
   font-family: 'Poppins';
-  font-size: 20px;
+  font-size: 1.04167vw;
   line-height: 170%;
   letter-spacing: 0.35em;
 }
 
 .wine__title {
-  padding: 46px 0 52px 0;
-  line-height: 28px;
+  padding: 2.39583vw 0 2.70833vw 0;
+  line-height: 1.45833vw;
 }
 
 .wine__title span {
   font-family: 'ChocolateBox';
-  font-size: 74px;
-  line-height: 43px;
+  font-size: 3.85417vw;
+  line-height: 2.23958vw;
   color: #E2B024;
 }
 
 .wine__desc {
-  max-width: 526px;
-  padding-bottom: 64px;
+  max-width: 27.39583vw;
+  padding-bottom: 3.33333vw;
   font-family: 'Poppins';
-  font-size: 18px;
+  font-size: 0.9375vw;
   line-height: 100%;
 }
 
 .wine__btn {
-  width: 232px;
-  height: 68px;
+  width: 12.08333vw;
+  height: 3.54167vw;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.25vw;
   line-height: 100%;
 }
 
 .wine__btn:nth-child(2) {
-  margin-left: 60px;
+  margin-left: 3.125vw;
 }
 
 .wine__item {
   position: relative;
-  border: 10px solid #E2B024;
-  height: 478px;
+  border: 0.52083vw solid #E2B024;
+  height: 24.89583vw;
 }
 
 .wine__item::before {
   position: absolute;
   content: '';
-  width: 374px;
-  height: 374px;
+  width: 19.47917vw;
+  height: 19.47917vw;
   background-color: #E2B024;
   border-radius: 50%;
   position: absolute;
@@ -342,4 +342,164 @@ button {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.products {
+  margin: 150px 0 165px 0;
+}
+
+.products__title {
+  text-align: center;
+  font-family: 'ChocolateBox';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 28px;
+}
+
+.products__title span {
+  color: #E2B024;
+}
+
+.products__filter {
+  position: relative;
+  padding: 90px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products__filter::before {
+  position: absolute;
+  content: '';
+  border: 1px solid #fff;
+  bottom: 85px;
+  width: 417px;
+}
+
+.products__item {
+  margin-left: 72px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.products__item:nth-child(1) {
+  margin-left: 0;
+}
+
+.products__sale {
+  width: 80px;
+  height: 40px;
+  background-color: #E2B024;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products__name {
+  padding: 25px 0 16px 0;
+}
+
+.products__price {
+  position: relative;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #E2B024;
+}
+
+.products__price span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: line-through;
+}
+
+.products__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 75px;
+  font-family: 'ChocolateBox';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 10px;
+  color: #E2B024;
+  text-decoration: underline;
+}
+
+.review {
+  background: url(../../assets/images/review/review-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.review__content {
+  padding: 152px 0 162px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.review__title {
+  padding-bottom: 58px;
+  font-family: 'ChocolateBox';
+  font-size: 48px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.review__title span {
+  color: #E2B024;
+}
+
+.review__name {
+  padding: 30px 0;
+  font-family: 'Poppins';
+  font-size: 24px;
+  line-height: 175.3%;
+  color: #fff;
+}
+
+.review__desc {
+  max-width: 880px;
+  font-family: 'Poppins';
+  font-size: 16px;
+  line-height: 175.3%;
+  color: #fff;
+  text-align: center;
 }

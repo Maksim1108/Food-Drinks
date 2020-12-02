@@ -1,0 +1,73 @@
+.products {
+    margin: 150px 0 165px 0;
+    &__title {
+        text-align: center;
+        font-family:'ChocolateBox';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 28px;
+        span {
+            color: $color-yellow;
+        }
+    }
+    &__filter {
+        position: relative;
+        padding: 90px 0;
+        @include flex-center;
+        &::before {
+            position: absolute;
+            content: '';
+            border: 1px solid $color-white;
+            bottom: 85px;
+            width: 417px;
+        }
+    }
+    &__item {
+        margin-left: 72px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+    }
+    &__sale {
+        width: 80px;
+        height: 40px;
+        background-color: $color-yellow;
+        color: $color-black;
+        @include flex-center
+    }
+    &__name {
+        padding: 25px 0 16px 0;
+    }
+    &__price {
+        position: relative;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        color: $color-yellow;
+        span {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            text-decoration: line-through;
+        }
+    }
+    &__btn {
+        @include flex-center;
+        margin-top: 75px;
+        font-family: 'ChocolateBox';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 10px;
+        color: $color-yellow;
+        text-decoration: underline;
+    }
+}

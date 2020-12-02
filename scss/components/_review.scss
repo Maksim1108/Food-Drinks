@@ -1,0 +1,35 @@
+.review {
+    background: url(../../assets/images/review/review-bg.jpg) no-repeat center;
+    background-size: cover;
+    
+    &__content {
+        padding: 152px 0 162px 0;
+        @include flex-center;
+        flex-direction: column;
+    }
+    &__title {
+        padding-bottom: 58px;
+        font-family: 'ChocolateBox';
+        font-size: 48px;
+        line-height: 28px;
+        color: $color-white;
+        span {
+            color: $color-yellow;
+        }
+    }
+    &__name {
+        padding: 30px 0;
+        font-family: 'Poppins';
+        font-size: 24px;
+        line-height: 175.3%;
+        color: $color-white;
+    }
+    &__desc {
+        max-width: 880px;
+        font-family: 'Poppins';
+        font-size: 16px;
+        line-height: 175.3%;
+        color: $color-white;
+        text-align: center;
+    }
+}

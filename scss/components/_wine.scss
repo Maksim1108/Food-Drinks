@@ -1,52 +1,52 @@
 .wine {
     background-color: $color-gray;
     &__content {
-        padding: 267px 0 226px 0;
+        padding: vw(267) 0 vw(226) 0;
     }
     &__subtitle {
         font-family: 'Poppins';
-        font-size: 20px;
+        font-size: vw(20);
         line-height: 170%;
         letter-spacing: 0.35em;
     }
     &__title {
-        padding: 46px 0 52px 0;
-        line-height: 28px;
+        padding: vw(46) 0 vw(52) 0;
+        line-height: vw(28);
         span {
             font-family: 'ChocolateBox';
-            font-size: 74px;
-            line-height: 43px;
+            font-size: vw(74);
+            line-height: vw(43);
             color: $color-yellow;
         }
     }
     &__desc {
-        max-width: 526px;
-        padding-bottom: 64px;
+        max-width: vw(526);
+        padding-bottom: vw(64);
         font-family: 'Poppins';
-        font-size: 18px;
+        font-size: vw(18);
         line-height: 100%;
     }
     &__btn {
-        width: 232px;
-        height: 68px;
+        width: vw(232);
+        height: vw(68);
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 500;
-        font-size: 24px;
+        font-size: vw(24);
         line-height: 100%;
         &:nth-child(2) {
-            margin-left: 60px;
+            margin-left: vw(60);
         }
     }
     &__item {
         position: relative;
-        border: 10px solid $color-yellow;
-        height: 478px;
+        border: vw(10) solid $color-yellow;
+        height: vw(478);
         &::before {
             position: absolute;
             content: '';
-            width: 374px;
-            height: 374px;
+            width: vw(374);
+            height: vw(374);
             background-color: $color-yellow;
             border-radius: 50%;
             @include form-center;
