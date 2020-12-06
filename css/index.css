@@ -696,3 +696,122 @@ input {
   font-size: 36px;
   line-height: 171.6%;
 }
+
+.newsletter {
+  background: #1f1f1f;
+  margin-top: 150px;
+}
+
+.newsletter__content {
+  padding: 57px 0 62px 0;
+  text-align: center;
+}
+
+.newsletter__title {
+  font-family: 'ChocolateBox';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 28px;
+  color: #E2B024;
+  text-transform: uppercase;
+}
+
+.newsletter__subtitle {
+  padding: 24px 0 70px 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.newsletter__input {
+  position: relative;
+  width: 570px;
+  height: 64px;
+  background: #000000;
+  border: none;
+}
+
+.newsletter__input::-webkit-input-placeholder {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+  padding-left: 34px;
+}
+
+.newsletter__input:-ms-input-placeholder {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+  padding-left: 34px;
+}
+
+.newsletter__input::-ms-input-placeholder {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+  padding-left: 34px;
+}
+
+.newsletter__input::placeholder {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+  padding-left: 34px;
+}
+
+.newsletter__btn {
+  position: absolute;
+  width: 127px;
+  height: 64px;
+  right: 720px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1F1F1F;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  background-color: #E2B024;
+  color: #1f1f1f;
+}
+
+.btn__transparent {
+  border: 1px solid #E2B024;
+  background-color: transparent;
+  color: #fff;
+}
