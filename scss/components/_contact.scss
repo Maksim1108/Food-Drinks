@@ -1,0 +1,83 @@
+.contact {
+    &__title {
+        text-align: center;
+        padding-bottom: 82px;
+        font-family: 'ChocolateBox';
+        font-size: 48px;
+        line-height: 28px;
+        color: $color-white;
+        span {
+            color: $color-yellow;
+        }
+    }
+    &__desc {
+        max-width: 466px;
+        margin-bottom:77px;
+    }
+    &__list {
+        margin-left: 40px;
+    }
+    &__item {
+        position: relative;
+        &:nth-child(2) {
+            padding: 42px 0;
+        }
+        &:nth-child(1)::before,
+        &:nth-child(2)::before,
+        &:nth-child(3)::before {
+            position: absolute;
+            content:'';
+            background-image: url(../../assets/images/contact/Call.svg);
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+            left: -42px;
+            bottom: -3px;
+        }
+        &:nth-child(2)::before {
+            background-image: url(../../assets/images/contact/Message.svg);
+            bottom: 38px;
+        }
+        &:nth-child(3)::before {
+            background-image: url(../../assets/images/contact/Location.svg);
+        }
+    }
+    &__social {
+        margin-top: 60px;
+    }
+    &__icon {
+        padding-right: 56px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__input {
+        margin-bottom: 29px;
+        width: 670px;
+        height: 64px;
+        background: transparent;
+        border: 1px solid $color-white;
+        &:nth-child(4) {
+            height: 133px;
+        }
+        &::placeholder {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 36px;
+            color: $color-white;
+        }
+    }
+    &__btn {
+        width: 200px;
+        height: 82px;
+        margin-top: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 171.6%;
+    }
+}

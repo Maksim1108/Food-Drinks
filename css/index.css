@@ -45,6 +45,10 @@ button {
   cursor: pointer;
 }
 
+input {
+  outline: none;
+}
+
 .col-12 {
   width: 100%;
 }
@@ -564,4 +568,131 @@ button {
   font-size: 18px;
   line-height: 10px;
   color: #E2B024;
+}
+
+.contact__title {
+  text-align: center;
+  padding-bottom: 82px;
+  font-family: 'ChocolateBox';
+  font-size: 48px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.contact__title span {
+  color: #E2B024;
+}
+
+.contact__desc {
+  max-width: 466px;
+  margin-bottom: 77px;
+}
+
+.contact__list {
+  margin-left: 40px;
+}
+
+.contact__item {
+  position: relative;
+}
+
+.contact__item:nth-child(2) {
+  padding: 42px 0;
+}
+
+.contact__item:nth-child(1)::before, .contact__item:nth-child(2)::before, .contact__item:nth-child(3)::before {
+  position: absolute;
+  content: '';
+  background-image: url(../../assets/images/contact/Call.svg);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  left: -42px;
+  bottom: -3px;
+}
+
+.contact__item:nth-child(2)::before {
+  background-image: url(../../assets/images/contact/Message.svg);
+  bottom: 38px;
+}
+
+.contact__item:nth-child(3)::before {
+  background-image: url(../../assets/images/contact/Location.svg);
+}
+
+.contact__social {
+  margin-top: 60px;
+}
+
+.contact__icon {
+  padding-right: 56px;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__input {
+  margin-bottom: 29px;
+  width: 670px;
+  height: 64px;
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+.contact__input:nth-child(4) {
+  height: 133px;
+}
+
+.contact__input::-webkit-input-placeholder {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #fff;
+}
+
+.contact__input:-ms-input-placeholder {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #fff;
+}
+
+.contact__input::-ms-input-placeholder {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #fff;
+}
+
+.contact__input::placeholder {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #fff;
+}
+
+.contact__btn {
+  width: 200px;
+  height: 82px;
+  margin-top: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 171.6%;
 }
