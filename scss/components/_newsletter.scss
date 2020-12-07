@@ -22,8 +22,10 @@
         font-size: 18px;
         line-height: 27px;
     }
-    &__input {
+    &__label {
         position: relative;
+    }
+    &__input {
         width: 570px;
         height: 64px;
         background:$color-black;
@@ -42,7 +44,7 @@
         position: absolute;
         width: 127px;
         height: 64px;
-        right: 720px;
+        right: 0px;
         font-family: 'Poppins';
         font-style: normal;
         font-weight: normal;
