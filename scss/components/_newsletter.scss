@@ -1,55 +1,56 @@
 .newsletter {
     background: $color-darkGray;
-    margin-top: 150px;
+    margin-top: vw(150);
     &__content {
-        padding: 57px 0 62px 0;
+        padding: vw(57) 0 vw(62) 0;
         text-align: center;
     }
     &__title {
         font-family: 'ChocolateBox';
         font-style: normal;
         font-weight: normal;
-        font-size: 48px;
-        line-height: 28px;
+        font-size: vw(48);
+        line-height: vw(28);
         color: $color-yellow;
         text-transform: uppercase;
     }
     &__subtitle {
-        padding: 24px 0 70px 0;
+        padding: vw(24) 0 vw(70) 0;
         font-family: 'Poppins';
         font-style: normal;
         font-weight: normal;
-        font-size: 18px;
-        line-height: 27px;
+        font-size: vw(18);
+        line-height: vw(27);
     }
     &__label {
         position: relative;
     }
     &__input {
-        width: 570px;
-        height: 64px;
+        width: vw(570);
+        height: vw(64);
         background:$color-black;
         border: none;
+        color: $color-white;
         &::placeholder {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
-            line-height: 27px;
+            font-size: vw(18);
+            line-height: vw(27);
             color: $color-white;
-            padding-left: 34px;
+            padding-left: vw(34);
         }
     }
     &__btn {
         position: absolute;
-        width: 127px;
-        height: 64px;
+        width: vw(127);
+        height: vw(64);
         right: 0px;
         font-family: 'Poppins';
         font-style: normal;
         font-weight: normal;
-        font-size: 18px;
-        line-height: 27px;
+        font-size: vw(18);
+        line-height: vw(27);
         color: #1F1F1F;
     }
 }

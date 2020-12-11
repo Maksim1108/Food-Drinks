@@ -1,36 +1,36 @@
 .contact {
     &__title {
         text-align: center;
-        padding-bottom: 82px;
+        padding-bottom: vw(82);
         font-family: 'ChocolateBox';
-        font-size: 48px;
-        line-height: 28px;
+        font-size: vw(48);
+        line-height: vw(28);
         color: $color-white;
         span {
             color: $color-yellow;
         }
     }
     &__desc {
-        max-width: 466px;
-        margin-bottom:77px;
+        max-width: vw(466);
+        margin-bottom:vw(77);
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 300;
-        font-size: 18px;
+        font-size: vw(18);
         line-height: 207.6%;
     }
     &__list {
-        margin-left: 40px;
+        margin-left: vw(40);
     }
     &__item {
         position: relative;
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 300;
-        font-size: 18px;
+        font-size: vw(18);
         line-height: 171.6%;
         &:nth-child(2) {
-            padding: 42px 0;
+            padding: vw(42) 0;
         }
         &:nth-child(1)::before,
         &:nth-child(2)::before,
@@ -41,7 +41,7 @@
             background-repeat: no-repeat;
             width: 25px;
             height: 25px;
-            left: -42px;
+            left: vw(-42);
         }
         &:nth-child(2)::before {
             background-image: url(../../assets/images/contact/Message.svg);
@@ -51,41 +51,42 @@
         }
     }
     &__social {
-        margin-top: 60px;
+        margin-top: vw(60);
     }
     &__icon {
-        padding-right: 56px;
+        padding-right: vw(56);
     }
     &__form {
         display: flex;
         flex-direction: column;
     }
     &__input {
-        margin-bottom: 29px;
-        width: 670px;
-        height: 64px;
+        margin-bottom: vw(29);
+        width: vw(670);
+        height: vw(64);
         background: transparent;
+        color: $color-white;
         border: 1px solid $color-white;
         &:nth-child(4) {
-            height: 133px;
+            height: vw(133);
         }
         &::placeholder {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: normal;
-            font-size: 24px;
-            line-height: 36px;
+            font-size: vw(24);
+            line-height: vw(36);
             color: $color-white;
         }
     }
     &__btn {
-        width: 200px;
-        height: 82px;
-        margin-top: 10px;
+        width: vw(200);
+        height: vw(82);
+        margin-top: vw(10);
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 500;
-        font-size: 36px;
+        font-size: vw(36);
         line-height: 171.6%;
     }
 }

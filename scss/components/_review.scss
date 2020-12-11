@@ -2,31 +2,31 @@
     background: url(../../assets/images/review/review-bg.jpg) no-repeat center;
     background-size: cover;
     &__content {
-        padding: 152px 0 162px 0;
+        padding: vw(152) 0 vw(162) 0;
         @include flex-center;
         flex-direction: column;
     }
     &__title {
-        padding-bottom: 58px;
+        padding-bottom: vw(58);
         font-family: 'ChocolateBox';
-        font-size: 48px;
-        line-height: 28px;
+        font-size: vw(48);
+        line-height: vw(28);
         color: $color-white;
         span {
             color: $color-yellow;
         }
     }
     &__name {
-        padding: 30px 0;
+        padding: vw(30) 0;
         font-family: 'Poppins';
-        font-size: 24px;
+        font-size: vw(24);
         line-height: 175.3%;
         color: $color-white;
     }
     &__desc {
-        max-width: 880px;
+        max-width: vw(880);
         font-family: 'Poppins';
-        font-size: 16px;
+        font-size: vw(16);
         line-height: 175.3%;
         color: $color-white;
         text-align: center;

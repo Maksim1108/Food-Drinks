@@ -1,11 +1,11 @@
 .events {
-    margin-bottom: 150px;
+    margin-bottom: vw(150);
     &__title {
         text-align: center;
-        padding-bottom: 60px;
+        padding-bottom: vw(60);
         font-family: 'ChocolateBox';
-        font-size: 48px;
-        line-height: 28px;
+        font-size: vw(48);
+        line-height: vw(28);
         color: $color-white;
         span {
             color: $color-yellow;
@@ -15,35 +15,45 @@
         background: $color-gray;
     }
     &__info {
-        padding-left: 30px;
+        padding-left: vw(30);
     }
     &__subtitle {
-        padding: 62px 0 8px 0;
+        padding: vw(62) 0 vw(8) 0;
         font-family: 'Poppins';
-        font-size: 24px;
-        line-height: 36px;
+        font-size: vw(24);
+        line-height: vw(36);
         color: $color-white;
     }
     &__date {
         font-family: 'Poppins';
-        font-size: 18px;
-        line-height: 27px;
+        font-size: vw(18);
+        line-height: vw(27);
         color: $color-white;
     }
     &__desc {
-        max-width: 512px;
-        padding: 45px 0;
+        max-width: vw(512);
+        padding: vw(45) 0;
         font-family: 'Poppins';
-        font-size: 18px;
+        font-size: vw(18);
         font-weight: 300;
-        line-height: 27px;
+        line-height: vw(27);
         color: $color-white;
     }
     &__btn {
+        position: relative;
         text-transform: uppercase;
         font-family: 'ChocolateBox';
-        font-size: 18px;
-        line-height: 10px;
+        font-size: vw(18);
+        line-height: vw(10);
         color: $color-yellow;
+        &::before {
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: 100%;
+            background-color: $color-yellow;
+            opacity: 0.6;
+            bottom: vw(-10);
+        }
     }
 }

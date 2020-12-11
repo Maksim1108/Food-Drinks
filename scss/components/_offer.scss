@@ -1,12 +1,12 @@
 .offer {
-    margin: 162px 0 224px 0;
+    margin: vw(162) 0;
     &__title {
         font-family: 'ChocolateBox';
         font-style: normal;
         font-weight: normal;
-        font-size: 48px;
-        line-height: 28px;
-        padding-bottom: 97px;
+        font-size: vw(48);
+        line-height: vw(28);
+        padding-bottom: vw(97);
         text-align: center;
         span {
             color: $color-yellow;
@@ -16,16 +16,18 @@
         font-family: 'ChocolateBox';
         font-style: normal;
         font-weight: normal;
-        font-size: 24px;
-        line-height: 14px;
+        font-size: vw(24);
+        line-height: vw(14);
         text-transform: uppercase;
+        transform: translate(25px, -85px);
     }
     &__price {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: bold;
-        font-size: 36px;
-        line-height: 54px;
+        font-size: vw(36);
+        line-height: vw(54);
+        transform: translate(25px, -85px);
     }
     &__row {
         @include flex-center; 
