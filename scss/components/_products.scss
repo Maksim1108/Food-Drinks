@@ -1,73 +1,144 @@
-.products {
-    margin: 150px 0 165px 0;
-    &__title {
+.sort{
+    margin: vw(150) 0 vw(164) 0;
+    &__row{
+        width: 100% !important;
+    }
+    &__title{
         text-align: center;
-        font-family:'ChocolateBox';
+        margin-bottom:vw(90);
+        font-family: 'ChocolateBox';
         font-style: normal;
         font-weight: normal;
-        font-size: 48px;
-        line-height: 28px;
+        font-size: vw(48);
+        line-height: vw(28);
         span {
             color: $color-yellow;
         }
     }
-    &__filter {
-        position: relative;
-        padding: 90px 0;
+    &__filter{
         @include flex-center;
-        &::before {
+        position: relative;
+        line-height: 1.5;
+        color: $color-white;
+        cursor: pointer;
+        &::after{
+            content: "";
             position: absolute;
-            content: '';
-            border: 1px solid $color-white;
-            bottom: 85px;
-            width: 417px;
+            bottom: 0;
+            width: vw(385);
+            height: 1px;
+            background-color: $color-white;
+        }
+        .filter__items{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: normal;
+            font-size: vw(24);
+            line-height: vw(36);
+            margin-right:vw(70);
+            position: relative;
+            transition: 0.3s;
+            &:last-child{
+                margin-right: 0;
+            }
+            &--active{
+                color: $color-yellow;
+                cursor: pointer;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    background-color: $color-yellow;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 12;
+                }
+            }
         }
     }
-    &__item {
-        margin-left: 72px;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 36px;
-        &:nth-child(1) {
-            margin-left: 0;
-        }
+    &__item{
+        position: relative !important;
+        display: flex;
+        flex-direction: column  !important;
+        align-items: center !important;
+        margin:0 0 vw(95) 0;
+        justify-content: flex-end !important;
     }
-    &__sale {
-        width: 80px;
-        height: 40px;
-        background-color: $color-yellow;
+    &__img{
+        margin-bottom:vw(15);
+        max-height: vw(360);
+
+    }
+    &__discount{
+        line-height: vw(21);
         color: $color-black;
-        @include flex-center
+        display: inline-block !important;
+        background-color: $color-yellow;
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: vw(80);
+        height: vw(40);
+        display:flex  !important;
+        justify-content: center !important;
+        align-items: center !important;
+
     }
-    &__name {
-        padding: 25px 0 16px 0;
+    &__row{
+        padding-top: vw(90);
     }
-    &__price {
-        position: relative;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 36px;
-        color: $color-yellow;
-        span {
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 24px;
-            text-decoration: line-through;
-        }
+    &__column{
+        justify-content: flex-start !important;
     }
-    &__btn {
-        @include flex-center;
-        margin-top: 75px;
+    &__product-name{
         font-family: 'ChocolateBox';
         font-style: normal;
         font-weight: normal;
-        font-size: 18px;
-        line-height: 10px;
+        text-transform: uppercase;
+        font-size: vw(24);
+        line-height: vw(14);
+        line-height: 1.2;
+        color: $color-white;
+        justify-self: left;
+    }
+    &__old-price{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-size: vw(16);
+        line-height: vw(24);
+        line-height: 1.2;
         color: $color-yellow;
-        text-decoration: underline;
+        text-decoration: line-through;
+        margin: vw(8) vw(5) 0 0;
+    }
+    &__new-price{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: normal;
+        font-size: vw(24);
+        line-height: vw(36);
+        line-height: 1.2;
+        color: $color-yellow;
+    }
+    &__btn {
+        @include flex-center;
+        position: relative;
+        font-family: 'ChocolateBox';
+        font-style: normal;
+        font-weight: normal;
+        font-size: vw(18);
+        line-height: vw(10);
+        color: $color-yellow;
+        &::before {
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: vw(85);
+            background-color: $color-yellow;
+            opacity: 0.6;
+            bottom: vw(-8);
+        }
     }
 }

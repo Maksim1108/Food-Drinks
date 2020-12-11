@@ -24,7 +24,7 @@
         padding-bottom: vw(64);
         font-family: 'Poppins';
         font-size: vw(18);
-        line-height: 100%;
+        line-height: 50px;
     }
     &__btn {
         width: vw(232);
@@ -34,9 +34,7 @@
         font-weight: 500;
         font-size: vw(24);
         line-height: 100%;
-        &:nth-child(2) {
-            margin-left: vw(60);
-        }
+        margin-right: vw(50);
     }
     &__item {
         position: relative;

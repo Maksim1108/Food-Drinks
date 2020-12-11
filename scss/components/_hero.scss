@@ -15,9 +15,18 @@
         max-width: 745px;
     }
     &__button {
+        position: relative;
         padding: vw(35) 0;
         color: $color-yellow;
-        text-decoration: underline;
+        &::before {
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: 100%;
+            background-color: $color-yellow;
+            opacity: 0.6;
+            bottom: vw(30);
+        }
     }
     &__img {
         width: vw(470);

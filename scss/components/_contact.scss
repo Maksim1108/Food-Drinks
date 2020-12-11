@@ -13,12 +13,22 @@
     &__desc {
         max-width: 466px;
         margin-bottom:77px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 207.6%;
     }
     &__list {
         margin-left: 40px;
     }
     &__item {
         position: relative;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 171.6%;
         &:nth-child(2) {
             padding: 42px 0;
         }
@@ -32,11 +42,9 @@
             width: 25px;
             height: 25px;
             left: -42px;
-            bottom: -3px;
         }
         &:nth-child(2)::before {
             background-image: url(../../assets/images/contact/Message.svg);
-            bottom: 38px;
         }
         &:nth-child(3)::before {
             background-image: url(../../assets/images/contact/Location.svg);

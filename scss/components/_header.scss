@@ -9,12 +9,16 @@
             line-height: vw(18);
         }
     }
+    &__middle {
+        margin-left: vw(200);
+    }
     &__right {
         @include flex-center(space-between)
     }
     &__connection {
         font-size: vw(12);
         line-height: vw(18);
+        padding-right: vw(40);
         color: $color-white;
     }
     &__burger {
@@ -38,6 +42,9 @@
             background-color:$color-white;
             top: vw(-5);
         }
+    }
+    &__icon {
+        padding-right: vw(36);
     }
     &__bottom {
         padding: vw(22) 0;

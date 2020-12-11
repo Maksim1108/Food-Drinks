@@ -45,6 +45,12 @@ button {
   cursor: pointer;
 }
 
+button:active {
+  -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
 input {
   outline: none;
 }
@@ -144,6 +150,10 @@ input {
   line-height: 0.9375vw;
 }
 
+.header__middle {
+  margin-left: 10.41667vw;
+}
+
 .header__right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,6 +169,7 @@ input {
 .header__connection {
   font-size: 0.625vw;
   line-height: 0.9375vw;
+  padding-right: 2.08333vw;
   color: #fff;
 }
 
@@ -185,6 +196,10 @@ input {
   height: 0.10417vw;
   background-color: #fff;
   top: -0.26042vw;
+}
+
+.header__icon {
+  padding-right: 1.875vw;
 }
 
 .header__bottom {
@@ -259,9 +274,19 @@ input {
 }
 
 .hero__button {
+  position: relative;
   padding: 1.82292vw 0;
   color: #E2B024;
-  text-decoration: underline;
+}
+
+.hero__button::before {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: #E2B024;
+  opacity: 0.6;
+  bottom: 1.5625vw;
 }
 
 .hero__img {
@@ -301,7 +326,7 @@ input {
   padding-bottom: 3.33333vw;
   font-family: 'Poppins';
   font-size: 0.9375vw;
-  line-height: 100%;
+  line-height: 50px;
 }
 
 .wine__btn {
@@ -312,10 +337,7 @@ input {
   font-weight: 500;
   font-size: 1.25vw;
   line-height: 100%;
-}
-
-.wine__btn:nth-child(2) {
-  margin-left: 3.125vw;
+  margin-right: 2.60417vw;
 }
 
 .wine__item {
@@ -348,26 +370,29 @@ input {
           transform: translate(-50%, -50%);
 }
 
-.products {
-  margin: 150px 0 165px 0;
+.sort {
+  margin: 7.8125vw 0 8.54167vw 0;
 }
 
-.products__title {
+.sort__row {
+  width: 100% !important;
+}
+
+.sort__title {
   text-align: center;
+  margin-bottom: 4.6875vw;
   font-family: 'ChocolateBox';
   font-style: normal;
   font-weight: normal;
-  font-size: 48px;
-  line-height: 28px;
+  font-size: 2.5vw;
+  line-height: 1.45833vw;
 }
 
-.products__title span {
+.sort__title span {
   color: #E2B024;
 }
 
-.products__filter {
-  position: relative;
-  padding: 90px 0;
+.sort__filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,84 +402,170 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  line-height: 1.5;
+  color: #fff;
+  cursor: pointer;
 }
 
-.products__filter::before {
+.sort__filter::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 20.05208vw;
+  height: 1px;
+  background-color: #fff;
+}
+
+.sort__filter .filter__items {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25vw;
+  line-height: 1.875vw;
+  margin-right: 3.64583vw;
+  position: relative;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sort__filter .filter__items:last-child {
+  margin-right: 0;
+}
+
+.sort__filter .filter__items--active {
+  color: #E2B024;
+  cursor: pointer;
+}
+
+.sort__filter .filter__items--active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #E2B024;
+  bottom: 0;
+  left: 0;
+  z-index: 12;
+}
+
+.sort__item {
+  position: relative !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical  !important;
+  -webkit-box-direction: normal  !important;
+      -ms-flex-direction: column  !important;
+          flex-direction: column  !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  margin: 0 0 4.94792vw 0;
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+}
+
+.sort__img {
+  margin-bottom: 0.78125vw;
+  max-height: 18.75vw;
+}
+
+.sort__discount {
+  line-height: 1.09375vw;
+  color: #000000;
+  display: inline-block !important;
+  background-color: #E2B024;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 4.16667vw;
+  height: 2.08333vw;
+  display: -webkit-box  !important;
+  display: -ms-flexbox  !important;
+  display: flex  !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.sort__row {
+  padding-top: 4.6875vw;
+}
+
+.sort__column {
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+}
+
+.sort__product-name {
+  font-family: 'ChocolateBox';
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.25vw;
+  line-height: 0.72917vw;
+  line-height: 1.2;
+  color: #fff;
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+
+.sort__old-price {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.83333vw;
+  line-height: 1.25vw;
+  line-height: 1.2;
+  color: #E2B024;
+  text-decoration: line-through;
+  margin: 0.41667vw 0.26042vw 0 0;
+}
+
+.sort__new-price {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25vw;
+  line-height: 1.875vw;
+  line-height: 1.2;
+  color: #E2B024;
+}
+
+.sort__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  font-family: 'ChocolateBox';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9375vw;
+  line-height: 0.52083vw;
+  color: #E2B024;
+}
+
+.sort__btn::before {
   position: absolute;
   content: '';
-  border: 1px solid #fff;
-  bottom: 85px;
-  width: 417px;
-}
-
-.products__item {
-  margin-left: 72px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 36px;
-}
-
-.products__item:nth-child(1) {
-  margin-left: 0;
-}
-
-.products__sale {
-  width: 80px;
-  height: 40px;
+  height: 1px;
+  width: 4.42708vw;
   background-color: #E2B024;
-  color: #000000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.products__name {
-  padding: 25px 0 16px 0;
-}
-
-.products__price {
-  position: relative;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 36px;
-  color: #E2B024;
-}
-
-.products__price span {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  text-decoration: line-through;
-}
-
-.products__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 75px;
-  font-family: 'ChocolateBox';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 10px;
-  color: #E2B024;
-  text-decoration: underline;
+  opacity: 0.6;
+  bottom: -0.41667vw;
 }
 
 .review {
@@ -510,6 +621,49 @@ input {
 
 .offer {
   margin: 162px 0 224px 0;
+}
+
+.offer__title {
+  font-family: 'ChocolateBox';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 28px;
+  padding-bottom: 97px;
+  text-align: center;
+}
+
+.offer__title span {
+  color: #E2B024;
+}
+
+.offer__name {
+  font-family: 'ChocolateBox';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.offer__price {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.offer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .events {
@@ -586,6 +740,11 @@ input {
 .contact__desc {
   max-width: 466px;
   margin-bottom: 77px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 207.6%;
 }
 
 .contact__list {
@@ -594,6 +753,11 @@ input {
 
 .contact__item {
   position: relative;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 171.6%;
 }
 
 .contact__item:nth-child(2) {
@@ -608,12 +772,10 @@ input {
   width: 25px;
   height: 25px;
   left: -42px;
-  bottom: -3px;
 }
 
 .contact__item:nth-child(2)::before {
   background-image: url(../../assets/images/contact/Message.svg);
-  bottom: 38px;
 }
 
 .contact__item:nth-child(3)::before {

@@ -1,3 +1,33 @@
 .offer {
     margin: 162px 0 224px 0;
+    &__title {
+        font-family: 'ChocolateBox';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 28px;
+        padding-bottom: 97px;
+        text-align: center;
+        span {
+            color: $color-yellow;
+        }
+    }
+    &__name {
+        font-family: 'ChocolateBox';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 14px;
+        text-transform: uppercase;
+    }
+    &__price {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 54px;
+    }
+    &__row {
+        @include flex-center; 
+    }
 }
